@@ -15,7 +15,7 @@ function Header({ title, bgColor, textColor }) {
 }
 
 Header.defaultProps = {
-  title: 'Rating APP',
+  title: 'Rate & Review',
   bgColor: 'rgba(0,0,0,0.4)',
   textColor: '#ff6a95',
 }

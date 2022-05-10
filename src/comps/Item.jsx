@@ -10,10 +10,10 @@ function Item({ item }) {
   return (
     <Card>
       <div className='num-display'>{item.rating}</div>
-      <button className='edit' onClick={prepareEdit(item)}>
+      <button className='edit' onClick={() => prepareEdit(item)}>
         <FaEdit color='green' />
       </button>
-      <button className='close' onClick={deleteItem(item.id)}>
+      <button className='close' onClick={() => deleteItem(item.id)}>
         <FaTimes color='red' />
       </button>
       <div className='text-display'>{item.review}</div>

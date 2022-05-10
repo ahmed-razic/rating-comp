@@ -8,16 +8,16 @@ export const appData = [
   },
   {
     id: 2,
-    userName: 'Osman Emin',
+    userName: 'Ahmed Razic',
     review:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati quam animi vitae quasi modi excepturi blanditiis iusto aperiam doloremque?',
     rating: 9,
   },
   {
     id: 3,
-    userName: 'Hamza Talha',
+    userName: 'Ahmed Razic',
     review:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati quam animi vitae quasi modi excepturi blanditiis iusto aperiam doloremque?',
     rating: 8,
   },
-];
+]

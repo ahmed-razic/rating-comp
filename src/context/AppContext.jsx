@@ -9,25 +9,21 @@ export const AppProvider = function ({ children }) {
   const [editState, setEditState] = useState({ item: {}, edit: false })
 
   const addItem = function (newItem) {
-    console.log('add item')
     newItem.id = uuidv4()
     setData([newItem, ...data])
   }
 
   const deleteItem = function (id) {
     if (window.confirm('Are you sure?')) {
-      console.log('delete item')
-      data.filter((item) => item.id !== id)
+      setData(data.filter((item) => item.id !== id))
     }
   }
 
   const prepareEdit = function (itemToUpdate) {
-    console.log('edit item')
     setEditState({ item: itemToUpdate, edit: true })
   }
 
   const updateItem = function (id, updatedItem) {
-    console.log('prepare edit')
     setData(
       data.map((item) => (item.id === id ? { ...item, ...updatedItem } : item))
     )

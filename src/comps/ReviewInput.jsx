@@ -57,7 +57,7 @@ function ReviewInput() {
       <form onSubmit={handleSubmit}>
         <RatingInput
           select={(selectedRating) => {
-            selectedRating(selectedRating)
+            setRating(selectedRating)
           }}
         />
         <div className='input-group'>
@@ -68,11 +68,11 @@ function ReviewInput() {
             placeholder='Write a review'
             value={review}
           />
-          <Button type='submit' version='secondary' isDisabled={btnDisabled}>
+          <Button type='submit' version='primary' isDisabled={btnDisabled}>
             Submit
           </Button>
-          {message && <div className='message'>{message}</div>}
         </div>
+        {message && <div className='message'>{message}</div>}
       </form>
     </Card>
   )
