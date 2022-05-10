@@ -1,30 +1,30 @@
-import { createContext, useState } from 'react';
-import { appData } from '../data/AppData';
+import { createContext, useState } from 'react'
+import { appData } from '../data/AppData'
 
-const AppContext = createContext();
+const AppContext = createContext()
 
 export const AppProvider = function ({ children }) {
-  const [data, setData] = useState(appData);
+  const [data, setData] = useState(appData)
 
   const deleteItem = function () {
-    console.log('delete item');
-  };
+    console.log('delete item')
+  }
 
   const editItem = function () {
-    console.log('edit item');
-  };
+    console.log('edit item')
+  }
 
   return (
     <AppContext.Provider
       value={{
-        appData: appData,
+        data: data,
         deleteItem: deleteItem,
         editItem: editItem,
       }}
     >
       {children}
     </AppContext.Provider>
-  );
-};
+  )
+}
 
-export default AppContext;
+export default AppContext

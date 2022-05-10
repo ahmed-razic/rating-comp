@@ -32,6 +32,14 @@ header {
   margin-bottom: 30px;
 }
 
+footer {
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .card {
   background-color: #fff;
   color: #333;

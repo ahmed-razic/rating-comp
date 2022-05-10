@@ -1,4 +1,9 @@
+import { useContext } from 'react'
+import AppContext from '../context/AppContext'
+
 function RatingStats() {
-  return <div>RatingStats</div>;
+  const { data } = useContext(AppContext)
+
+  return <div>RatingStats</div>
 }
-export default RatingStats;
+export default RatingStats

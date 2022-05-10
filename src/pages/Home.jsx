@@ -1,5 +1,10 @@
-import List from '../comps/List';
+import List from '../comps/List'
+
 function Home() {
-  return <div>Home Page</div>;
+  return (
+    <div className='container'>
+      <List />
+    </div>
+  )
 }
-export default Home;
+export default Home
