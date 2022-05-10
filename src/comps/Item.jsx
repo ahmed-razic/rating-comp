@@ -5,15 +5,15 @@ import AppContext from '../context/AppContext'
 import Card from './Card'
 
 function Item({ item }) {
-  const { deleteItem, editItem } = useContext(AppContext)
+  const { deleteItem, prepareEdit } = useContext(AppContext)
 
   return (
     <Card>
       <div className='num-display'>{item.rating}</div>
-      <button className='edit' onClick={editItem}>
+      <button className='edit' onClick={prepareEdit(item)}>
         <FaEdit color='green' />
       </button>
-      <button className='close' onClick={deleteItem}>
+      <button className='close' onClick={deleteItem(item.id)}>
         <FaTimes color='red' />
       </button>
       <div className='text-display'>{item.review}</div>

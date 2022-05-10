@@ -1,8 +1,13 @@
-import { useContext, useState } from 'react'
+import { useContext, useEffect, useState } from 'react'
 import AppContext from '../context/AppContext'
 
 function RatingInput({ select }) {
-  const [selected, setSelected] = useState(3)
+  const [selected, setSelected] = useState(5)
+  const { editState } = useContext(AppContext)
+
+  useEffect(() => {
+    setSelected(editState.item.rating)
+  }, [editState])
 
   const handleChange = function (e) {
     setSelected(+e.target.value)
