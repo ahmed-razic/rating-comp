@@ -17,9 +17,7 @@ export const AppProvider = function ({ children }) {
   const deleteItem = function (id) {
     if (window.confirm('Are you sure?')) {
       console.log('delete item')
-      data.filter((item) => {
-        item.id !== id
-      })
+      data.filter((item) => item.id !== id)
     }
   }
 
@@ -28,12 +26,10 @@ export const AppProvider = function ({ children }) {
     setEditState({ item: itemToUpdate, edit: true })
   }
 
-  const updateItem = function (updatedItem) {
+  const updateItem = function (id, updatedItem) {
     console.log('prepare edit')
     setData(
-      data.map((item) =>
-        item.id === updatedItem.id ? { ...item, ...updatedItem } : item
-      )
+      data.map((item) => (item.id === id ? { ...item, ...updatedItem } : item))
     )
   }
 
@@ -45,6 +41,7 @@ export const AppProvider = function ({ children }) {
         addItem: addItem,
         deleteItem: deleteItem,
         prepareEdit: prepareEdit,
+        updateItem: updateItem,
       }}
     >
       {children}
