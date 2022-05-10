@@ -1,4 +1,4 @@
-export const ratingData = [
+export const appData = [
   {
     id: 1,
     userName: 'Ahmed Razic',
@@ -20,4 +20,4 @@ export const ratingData = [
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Quos obcaecati quam animi vitae quasi modi excepturi blanditiis iusto aperiam doloremque?',
     rating: 8,
   },
-]
+];

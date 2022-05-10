@@ -1,27 +1,26 @@
 import PropTypes from 'prop-types';
 
-function Header({ title, bgColor, textColor }) {
-  const headerStyle = {
+function Footer({ title, bgColor, textColor }) {
+  const footerStyle = {
     backgroundColor: bgColor,
     color: textColor,
   };
   return (
-    <header style={headerStyle} className='text-center'>
-      <h1>{title}</h1>
-    </header>
+    <footer style={footerStyle} className='text-center'>
+      {title} &copy; 2022
+    </footer>
   );
 }
 
-Header.defaultProps = {
-  title: 'Rating APP',
+Footer.defaultProps = {
+  title: 'Ahmed Razic',
   bgColor: 'rgba(0,0,0,0.1)',
   textColor: 'blue',
 };
 
-Header.propTypes = {
+Footer.propTypes = {
   title: PropTypes.string.isRequired,
   bgColor: PropTypes.string,
   textColor: PropTypes.string,
 };
-
-export default Header;
+export default Footer;

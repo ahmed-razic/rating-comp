@@ -1,17 +1,27 @@
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { AppProvider } from './context/AppContext';
+import Header from './comps/Header';
+import Footer from './comps/Footer';
+import Item from './comps/Item';
+import Home from './pages/Home';
+import About from './pages/About';
+import Contact from './pages/Contact';
+
 function App() {
   return (
-    <>
-      <div className='container'>
-        My App
-        <p className='fs-4 text-danger'>
-          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aspernatur
-          recusandae unde alias iure non totam, cum ut consectetur amet
-          veritatis inventore officiis tempore corporis? Vel libero magnam non
-          et sit!
-        </p>
-      </div>
-    </>
-  )
+    <AppProvider>
+      <Header />
+      <Item />
+      <Router>
+        <Routes>
+          <Route exact path='/' element={<Home />} />
+          <Route exact path='/about' element={<About />} />
+          <Route exact path='/contact' element={<Contact />} />
+        </Routes>
+      </Router>
+      <Footer />
+    </AppProvider>
+  );
 }
 
-export default App
+export default App;
