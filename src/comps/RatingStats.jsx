@@ -12,9 +12,9 @@ function RatingStats() {
   average = average.toFixed(1).replace(/[.,]0$/, '')
 
   return (
-    <div className='rating-stats'>
-      <h4>{data.length} Reviews</h4>
-      <h4>Average Rating: {isNaN(average) ? 0 : average}</h4>
+    <div className='rating-stats mt-5'>
+      <h6>{data.length} Reviews</h6>
+      <h6>Average Rating: {isNaN(average) ? 0 : average}</h6>
     </div>
   )
 }
