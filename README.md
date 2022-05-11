@@ -1,6 +1,6 @@
 # Rate & Review App
 
-<p>Rate & Review App is small web app done in React.js. Provides possibiltes to leave raview and rating reagring a service or a product. Local or Cloud storage is not implemented becase main focuse was on basic React concepts like Context, Hooks, Routes, component/app level State managment.</p>
+<p>Rate & Review App is small web app done in React.js. Provides possibilities to leave review and rating regarding a service or a product. Local or Cloud storage is not implemented because main focus was on basic React concepts like Context, Hooks, Routes, component/app level State management.</p>
 
 <div><a href="https://harmonious-nasturtium-d540d5.netlify.app/" target="_blank" rel="noopener noreferrer"
     style="padding:0.5rem 0.7rem;
@@ -23,4 +23,4 @@
 
 ## Screenshot
 
-<img src="/screenshot.jpg" height="800" style="border-radius:20px;margin-bottom:2rem;" />
+<img src="/screenshot.jpg" height="600" style="border-radius:20px;margin-bottom:2rem;" />
