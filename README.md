@@ -2,7 +2,7 @@
 
 <p>Rate & Review App is small web app done in React.js. Provides possibilities to leave review and rating regarding a service or a product. Local or Cloud storage is not implemented because main focus was on basic React concepts like Context, Hooks, Routes, component/app level State management.</p>
 
-<div><a href="https://harmonious-nasturtium-d540d5.netlify.app/" target="_blank" rel="noopener noreferrer"
+<div><a href="https://transcendent-cassata-b9c7fd.netlify.app/" target="_blank" rel="noopener noreferrer"
     style="padding:0.5rem 0.7rem;
     color: black;
     background: #F1DEDE;
