@@ -1,6 +1,7 @@
 import List from '../comps/List'
 import RatingStats from '../comps/RatingStats'
 import ReviewInput from '../comps/ReviewInput'
+import Links from '../comps/Links'
 
 function Home() {
   return (
@@ -9,6 +10,7 @@ function Home() {
       <ReviewInput />
       <RatingStats />
       <List />
+      <Links />
     </div>
   )
 }
