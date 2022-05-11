@@ -19,7 +19,6 @@
 <p>Hooks (useState, useEffect, useContext)</p>
 <p>Context state managment (properties/methods)</p>
 <p>Routes/Links/Pages</p>
-<p>fetch with async/await</p>
 
 ## Screenshot
 
