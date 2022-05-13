@@ -15,10 +15,9 @@
 ## Technology
 
 <p>React.js</p>
-<p>Routes/Links</p>
+<p>Routes/Links/Pages</p>
 <p>Hooks (useState, useEffect, useContext)</p>
 <p>Context state managment (properties/methods)</p>
-<p>Routes/Links/Pages</p>
 
 ## Screenshot
 
